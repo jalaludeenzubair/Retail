@@ -24,3 +24,5 @@ export class User {
 const UserModel = getModelForClass(User);
 
 export default UserModel;
+
+export type UserType = InstanceType<typeof User>;

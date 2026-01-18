@@ -172,6 +172,9 @@ class DBService<K extends keyof typeof DB_COLLECTION_NAME> {
   ): Promise<ModelTypeMap[K] | null> {
     return this.model.findOneAndDelete({ _id: id }).lean().exec();
   }
+  async aggregate(pipeline: any[]): Promise<ModelTypeMap[K][]> {
+    return this.model.aggregate(pipeline).exec();
+  }
 }
 
 export default DBService;
