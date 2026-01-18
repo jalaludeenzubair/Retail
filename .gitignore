@@ -1,0 +1,43 @@
+# Node.js dependencies (applies to both client and server node_modules)
+node_modules/
+# Optional npm cache directory
+.npm
+
+# Environment files
+.env
+.env.local
+
+# Build files and generated directories
+build/
+dist/
+public/dist/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+lerna-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.swp
+*.swo
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files (uncomment as needed)
+# .idea/
+# .vscode/
+
+# Testing files
+coverage/
+.nyc_output/
+
+
+# Launch File
+.vscode/*
